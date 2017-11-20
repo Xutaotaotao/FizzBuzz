@@ -12,4 +12,9 @@ describe("FizzBuzz",function () {
         let result = fizzBuzz(number);
         expect(result).toEqual("Fizz");
     });
+    it("returns the Fizz given number by 3",function () {
+        let number = 5;
+        let result = fizzBuzz(number);
+        expect(result).toEqual("Buzz");
+    });
 });

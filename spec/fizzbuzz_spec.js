@@ -12,9 +12,14 @@ describe("FizzBuzz",function () {
         let result = fizzBuzz(number);
         expect(result).toEqual("Fizz");
     });
-    it("returns the Fizz given number by 3",function () {
+    it("returns the Fizz given number by 5",function () {
         let number = 5;
         let result = fizzBuzz(number);
         expect(result).toEqual("Buzz");
+    });
+    it("returns the Fizz given number by both 3 and 5",function () {
+        let number = 15;
+        let result = fizzBuzz(number);
+        expect(result).toEqual("FizzBuzz");
     });
 });
